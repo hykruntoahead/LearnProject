@@ -129,17 +129,6 @@ public class ViewPagerIndicator extends LinearLayout {
         return disMes.widthPixels;
     }
 
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-//        canvas.save();
-//        //移动
-//        canvas.translate(mInitTranslateX + mTranslateX, getHeight());
-//        //绘制path
-//        canvas.drawPath(mPath, mPaint);
-//        canvas.restore();
-    }
-
     //绘制三角形下标 绘制VIew本身的内容，通过调用View.onDraw(canvas)函数实现
 
     //  绘制自己的孩子通过dispatchDraw（canvas）实现
