@@ -8,7 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android5xmd" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/retrofit2learn" />
             <option value="$PROJECT_DIR$/rxjavaLearn" />
             <option value="$PROJECT_DIR$/viewpagerindicator" />
           </set>
