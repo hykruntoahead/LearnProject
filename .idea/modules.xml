@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LearnProject.iml" filepath="$PROJECT_DIR$/LearnProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android4chapter10/android4chapter10.iml" filepath="$PROJECT_DIR$/android4chapter10/android4chapter10.iml" />
       <module fileurl="file://$PROJECT_DIR$/android5xmd/android5xmd.iml" filepath="$PROJECT_DIR$/android5xmd/android5xmd.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofit2learn/retrofit2learn.iml" filepath="$PROJECT_DIR$/retrofit2learn/retrofit2learn.iml" />
