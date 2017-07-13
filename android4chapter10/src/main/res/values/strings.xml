@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android4 Chapter10</string>
+    <string name="author">heyukun</string>
+    <string name="des">美女图片</string>
 </resources>

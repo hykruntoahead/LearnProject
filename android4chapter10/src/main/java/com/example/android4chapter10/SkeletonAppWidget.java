@@ -16,6 +16,7 @@ import android.widget.RemoteViews;
  */
 
 //widget 是作为Broadcast Receiver 实现的
+
 public class SkeletonAppWidget extends AppWidgetProvider {
     public static final String WIDGET_BTN_ACTION = "widget_btn_action";
 
