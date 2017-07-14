@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android4chapter11">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.android_search_chapter1.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--指定 taskAffinity  默认为包名 -->
+        <activity
+            android:name="com.example.android_search_chapter1.SecondActivity"
+            android:configChanges="screenLayout"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.hyk.task1" />
+        <activity
+            android:name="com.example.android_search_chapter1.ThirdActivity"
+            android:configChanges="screenLayout"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.hyk.task1" >
+            <intent-filter >
+                <action android:name="com.hyk.charpter_1.c"/>
+                <action android:name="com.hyk.charpter_1.d"/>
+                <category android:name="com.hyk.category.c"/>
+                <category android:name="com.hyk.category.d"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android_search_chapter1.ShareActivity">
+            <!--This activity handles "SEND" actions with text data-->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+            <!--This activity also handles "SEND" and "SEND_MULTIPLE" with media data-->
+            <intent-filter >
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.google.panorama360+jpg"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <!--
+        <data >
+           android:scheme
+           android:host
+           android:port
+           android:path
+           android:pathPattern
+           android:pathPrefix
+           android:mimeType
+
+           data 由两部分组成： mimeType 和 URI
+           mimeType 媒体类型
+           URI <scheme>://<host>:<port>/[<path>|<pathPrefix>|<pathPattern>]
+           Scheme: URI的模式 比如-http、file、content 若uri中没有指定scheme，则其他参数无效,这也意味着URI无效
+           host: 主机号 www.google.com
+           port: 端口号
+           Path/pathPattern/pathPrefix: 路径信息
+
+        -->
+    </application>
+
+</manifest>
