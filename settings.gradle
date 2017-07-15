@@ -1,1 +1,1 @@
-include ':app', ':viewpagerindicator', ':rxjavaLearn', ':retrofit2learn', ':android5xmd', ':android4chapter10', ':android_search_chapter1'
+include ':app', ':viewpagerindicator', ':rxjavaLearn', ':retrofit2learn', ':android5xmd', ':android4chapter10', ':android_search_chapter1', ':androidsearchchapter2'
