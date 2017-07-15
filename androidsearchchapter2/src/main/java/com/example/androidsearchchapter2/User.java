@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * Serializable 接口 推荐指定serialVersionUID 虽然不指定系统也会自动生成
- * 但当结构有改变时会出现无法反序列化的问题（InvalidClassException）
+ * 但当结构有改变时会出现 无法反序列化 的问题（InvalidClassException）
  */
 
 public class User implements Serializable{
