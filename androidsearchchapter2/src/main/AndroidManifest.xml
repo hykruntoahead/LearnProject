@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidsearchchapter2">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application android:allowBackup="true"
         android:name=".MyApplication"
@@ -9,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" android:theme="@style/AppTheme">
-        <activity android:name=".contentprovider.ProviderActivity">
+        <activity android:name=".socketipc.TcpClientActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,8 +40,10 @@
             android:authorities="com.hyk.chapter2.contentprovider.BookProvider"
             android:name=".contentprovider.BookProvider"
             android:process=":provider"
-
             />
+
+        <service android:name=".socketipc.TCPServerService"
+            android:process=":server"/>
 
     </application>
 
